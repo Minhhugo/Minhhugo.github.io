@@ -1,0 +1,50 @@
+body{
+	    background-color: aliceblue;
+
+}
+
+h1{	
+	font-size: 55px;
+	text-align: center;
+	background-color: yellow;
+	color: green;
+}
+
+#menu a {
+	font-size: 30px;
+	color:red;
+	text-decoration:  none;
+}
+
+#menu a:hover {
+	color: blue;
+}
+#menu a:active{
+	color: yellow;
+}
+#menu a:visit {
+	color: grey;
+}
+#menu a:link {
+	color: green;
+}
+#menu a.active {
+	font-weight: bold;
+}
+img{
+	margin: 10px;
+	height: 225px;
+	width: 400px;
+}
+#t1{ 
+	width: 100%;
+}
+#anh1 img:hover{
+	border-radius: 50%;
+	border:5px solid green;
+}
+
+.wrap{
+ 	max-width: 1000px;
+ 	margin: auto;
+ }   
