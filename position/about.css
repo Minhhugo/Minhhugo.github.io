@@ -52,7 +52,7 @@ h1{
 #menu a.active {
 	font-weight: orange;
 }
-img{
+.anh{
 	margin: 10px;
 	height: 225px;
 	width: 400px;
@@ -74,9 +74,9 @@ div#anh1{
  	max-width: 1000px;
  	margin: auto;
  }
- #icon {
-	width: 96px;
-	position: fixed;
-	right: 296px;
-	bottom: -9px;
+ .anh2 {
+    width: 107px;
+    position: fixed;
+    right: 31px;
+    bottom: 12px;
 }
