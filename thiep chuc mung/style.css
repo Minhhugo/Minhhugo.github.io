@@ -3,16 +3,14 @@ html,body{margin: 0;padding: 0}
 img{max-height: 100%;}
 
 body{
+	    background: url("img/demo1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   font-family: "Open Sans",arial,sans-serif;
   font-size: 500;
   background-color: #ffffff;
-}
-@keyframes wth {
-  0%{background-color: red; color: yellow;opacity: 0.2;left: 0%;}
-  25%{background-color: green; color: orange}
-  50%{background-color: rgba(113, 255, 0, 0.76); opacity:1;color: blue}
-  75%{background-color: #8e00ff;color: #24d4e0;}
-  100%{background-color: #ffe800; color: #0035ff;opacity: 0.2;left: 70%;}
 }
 
 
@@ -22,35 +20,124 @@ body{
 	0%{left :76%; opacity: 1}
 	100%{left:22%;opacity: 0 }
 }
-p {
+#the1 {
 	position: absolute;
     animation: fkk 5s ease infinite;
  
 }
 
-.anh2 {
-    width: 107px;
-    position: fixed;
-    right: 86%;
-    bottom: 65%;
+@keyframes wth {
+
+  0%{ color:#ff1a00;opacity: 1%}
+  25%{ color: #ffe800;}
+  50%{color:#7d1d1d}
+  75%{color: #200ff5;}
+  100%{ color: #78ff00;opacity: 0%}
 }
-p{
-  margin: 0px 0;
-  font-size: 2.5em;
-  line-height: 2.5em;
-  font-family: georgia;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #8e0b00;
-  text-align: center;
-  animation: wth 10s ease infinite;
+
+#the1{
+
+
+    left: 28%;
+    margin: 22px 0;
+    font-size: 2.7em;
+    font-family: georgia;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #8e0b00;
+    animation: wth 10s ease infinite;
 } 
 
- body {
-    background-image: url("demo1.jpg");
+@keyframes ha {
+  0%{background-color: red; color: yellow;left: 0%;}
+  25%{background-color: green; color: orange}
+  50%{background-color: yellow;color: blue}
+  75%{background-color: #8e00ff;color: #24d4e0;}
+  100%{background-color: #ffe800; color: #0035ff;left:49%;}
+}
+#the2{
+	font-size: 3em;
+	font-family: georgia;
+  	position: absolute;
+ 
+  	bottom: 49%;
+  	animation: ha 10s ease infinite;
+}
+
+@keyframes pham {
+  0%{background-color: red; color: yellow;right: 0%;}
+  25%{background-color: green; color: orange}
+  50%{background-color: yellow;color: blue}
+  75%{background-color: #8e00ff;color: #24d4e0;}
+  100%{background-color: #ffe800; color: #0035ff;right:51%;}
+}
+#the3{
+
+	font-size: 3em;
+	font-family: georgia;
+  	position: absolute;
+ 
+  	bottom: 49%;
+  	animation: pham 10s ease infinite;
 }
 
 
+.anh1 {
+	border: 6px double green; 
+	border-radius:  50%;
+	width: 19%;
+    height: 29%;
+    position: fixed;
+    left: 7%;
+    bottom: 60%;
+}
+
+.anh2  {
+	border: 4px dotted yellow;
+	border-radius: 50%;
+    width: 22%;
+    height: 27%;
+    position: fixed;
+    right: 3%;
+    bottom: 60%;
+}
+
+.anh3  {
+	border: 7px  groove aqua;
+	border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border-top-left-radius: 44%;
+    width: 17%;
+    height: 30%;
+    position: fixed;
+    left:  0%;
+    bottom: 15%;
+}
+
+.anh4 {
+    border: 7px double greenyellow;
+    border-bottom-left-radius: 69%;
+    border-bottom-right-radius: 213%;
+    border-top-left-radius: 187%;
+    width: 16%;
+    height: 35%;
+    position: fixed;
+    right: 1%;
+    bottom: 6%;
+}
+
+.anh5{
+    border: 6px groove #afee82;
+   	border-bottom-left-radius: 44%;
+   	border-bottom-right-radius: 44%;
+   	border-top-left-radius: 35%;
+   	border-top-right-radius: 35%;
+    width: 21%;
+    height: 30%;
+    position: fixed;
+    right: 41%;
+    bottom: 0%;
+}
 
 body { background-color:#333; }
 #snow{
