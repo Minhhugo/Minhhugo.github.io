@@ -1,0 +1,117 @@
+.wrap{
+ 	max-width: 1200px;
+ 	margin: auto;
+ }
+body{
+	font-family: sans-serif;
+}
+#td1{
+	margin: 0px 0;
+	font-size: 2em;
+	line-height: 1.5em;
+	font-family: georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8e0b00;
+	text-align: center;
+	position: relative;
+
+}
+.anh{
+	z-index: 1
+}
+.anh1{
+	z-index: 0;
+    position: absolute;
+    max-width: 227px;
+    border-radius: 50%;
+     top: -112px;
+    left: -0;
+
+}
+.anh2{
+	z-index: 0;
+    position: absolute;
+    max-width: 227px;
+    border-radius: 50%;
+    top: -112px;
+    right:0%;
+}
+
+#menu ul {
+
+
+	list-style-type: none;
+	background-color: green;
+	text-align: center;
+}
+#menu ul li ul li {
+	list-style-type: none;
+	background-color: green;
+	text-align: center;
+
+}
+#menu ul li {
+
+ color: red;
+ display: inline-table;
+ width: 120px;
+ height: 50px;
+ line-height: 50px;
+ position: relative;
+}
+
+#menu ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+#menu ul li a:hover {
+	background: yellow;
+	color:red;
+}
+
+#menu ul li .con{
+	list-style-type: none;
+	display: none;
+	position: absolute;
+
+}
+
+#menu ul li:hover .con{
+	padding-left: 0;
+	display: block;
+}
+
+
+#anhnuong img{
+	width: 500px;height: 300px;
+	overflow-y: auto;
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	border: 2px solid green;
+
+
+}
+#douong img{
+	width: 500px;height: 500px;
+	overflow-y: auto;
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	border: 2px solid green;
+
+
+}
+#anhtungmon img{
+	width: 700px;height: 500px;
+	overflow-y: auto;
+	margin-left: 25%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	border: 2px solid green;
+}
+p{
+	text-align: center;
+}
