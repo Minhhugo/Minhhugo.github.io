@@ -1,0 +1,152 @@
+html,body{margin: 0;padding: 0}
+*{box-sizing: border-box;}
+img{max-height: 100%;}
+
+body{
+	    background: url("img/anh1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  font-family: "Open Sans",arial,sans-serif;
+  font-size: 500;
+  background-color: #ffffff;
+}
+
+.anh2{
+    border: 6px groove #afee82;
+    border-bottom-left-radius: 44%;
+    border-bottom-right-radius: 44%;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    width: 21%;
+    height: 30%;
+    position: fixed;
+    right: 41%;
+    bottom: 0%;
+}
+
+.anh3 {
+  border: 6px double green; 
+  border-radius:  50%;
+  width: 19%;
+    height: 29%;
+    position: fixed;
+    left: 3%;
+    bottom: 70%;
+}
+.anh4  {
+  border: 4px dotted yellow;
+  border-radius: 50%;
+    width: 22%;
+    height: 27%;
+    position: fixed;
+    right: 3%;
+    bottom: 70%;
+}
+
+
+@keyframes fkk{
+	0%{left :76%; opacity: 1}
+	100%{left:22%;opacity: 0 }
+}
+#the1 {
+	position: absolute;
+    animation: fkk 5s ease infinite;
+ 
+}
+
+@keyframes wth {
+
+  0%{ color:#ff1a00;opacity: 1%}
+  25%{ color: #ffe800;}
+  50%{color:#7d1d1d}
+  75%{color: #200ff5;}
+  100%{ color: #78ff00;opacity: 0%}
+}
+
+#the1{
+
+
+    left: 22%;
+    margin: 22px 0;
+    font-size: 2.7em;
+    font-family: georgia;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #8e0b00;
+    animation: wth 10s ease infinite;
+} 
+
+@keyframes nguyet {
+  0%{background-color: red; color: yellow;left: 0%;}
+  25%{background-color: green; color: orange}
+  50%{background-color: yellow;color: blue}
+  75%{background-color: #8e00ff;color: #24d4e0;}
+  100%{background-color: #ffe800; color: #0035ff;left:49%;}
+}
+#the2{
+	font-size: 3em;
+	font-family: georgia;
+  	position: absolute;
+ 
+  	bottom: 16%;
+  	animation: nguyet 10s ease infinite;
+}
+
+@keyframes anh {
+  0%{background-color: red; color: yellow;right: 0%;}
+  25%{background-color: green; color: orange}
+  50%{background-color: yellow;color: blue}
+  75%{background-color: #8e00ff;color: #24d4e0;}
+  100%{background-color: #ffe800; color: #0035ff;right:51%;}
+}
+#the3{
+
+	font-size: 3em;
+	font-family: georgia;
+  	position: absolute;
+ 
+  	bottom: 16%;
+  	animation: anh 10s ease infinite;
+}
+
+
+
+
+body { background-color:#333; }
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
