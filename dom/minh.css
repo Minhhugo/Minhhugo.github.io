@@ -1,0 +1,14 @@
+.wrap{
+
+	max-width: 1000px;
+	margin: auto;
+
+}
+.box{
+	border: 5px solid green;
+	}
+
+h1{
+	text-align: center;
+	color: blue;
+}

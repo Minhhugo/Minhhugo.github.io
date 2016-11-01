@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> test </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="minh.css">
+</head>
+<body>
+
+	<div class="wrap">
+		<div class="box">
+			<h1> TRẢI NGHIỆM TOUR DU LỊCH HÀ GIANG- ĐỒNG VĂN - LŨNG CÚ - MÈO VẠC </h1>
+
+
+			
+			<p id="p1">Du lịch Hà Giang mang đến nhiều trải nghiệm thú vị bởi phong cảnh hùng vĩ, những con đường uốn lượn quanh co dài bất tận, mà nó còn đẹp bởi Sắc Hoa và Tình Người. Hoa nở quanh năm với các mầu sắc diệu kỳ như: Vàng vàng của Hoa Cải, Tim Tím của Tam Giác Mạch, Trắng muốt của Hoa Mận, và một loài hoa đặc biệt nữa đó là “Hoa Đá”, cái tên tôi tự đặt ra khi chiêm ngưỡng quá nhiều những mầu Xám xanh, xám đen của những khối đá trên Cao Nguyên Đồng Văn.
+			</p> 
+
+
+			<p id="p2">
+				Tam giác mạch, loài hoa đặc trưng của cao nguyên đá Hà Giang với những bông hoa nhỏ li ti phơn phớt tím hồng hút hồn những người yêu hoa và mê chụp ảnh. Mảnh đất Hà Giang với màu xám của đá núi và màu hồng của hoa tam giác mạch. Màu xám sắc lạnh của lý trí và màu hồng kỳ diệu của giấc mơ. Sự đối lập kịch liệt lại hài hòa tuyệt đối trong một tổng thể… tạo nên vẻ đẹp vô song của Hà Giang.
+
+			</p>
+			<p id="p3"> 
+				Cao nguyên đá Đồng Văn (hay sơn nguyên Đồng Văn) là một cao nguyên đá trải rộng trên bốn huyện Quản Bạ, Yên Minh, Đồng Văn, Mèo Vạc của tỉnh Hà Giang, Việt Nam. Ngày 3 tháng 10 năm 2010, hồ sơ "Công viên Địa chất Cao nguyên đá Đồng Văn" đã được Hội đồng tư vấn Mạng lưới Công viên Địa chất Toàn cầu (GGN) của UNESCO chính thức công nhận là Công viên địa chất toàn cầu.
+			</p>
+
+		</div>
+
+		<script>
+			//cau1
+			function changeFontSize(x){
+				document.getElementById("p1").style.fontSize = x+'px';
+				document.getElementById("p2").style.fontSize = x+'px';
+				document.getElementById("p3").style.fontSize = x+'px';
+			}
+			//changeFontSize(20)
+
+			//cau2
+			
+			function increaseFontSize(y){
+				var p = document.getElementById(y);
+				if(currentFont<30){
+				var currentFont = parseInt(p.style.fontSize);
+				currentFont++;
+				p.style.fontSize = currentFont + "px";
+				}
+			}
+			// //cau3
+			function decreaseFontSize(z){
+				var p = document.getElementById(z);
+				if(currentFont >10){
+				var currentFont = parseInt(p.style.fontSize);
+				currentFont--;
+				p.style.fontSize = currentFont + "px";
+				};
+				
+			}
+
+			//cau4
+			
+			function changecolor(){
+			document.getElementById("p1").style.color="red";
+			document.getElementById("p2").style.color="yellow";
+			document.getElementById("p3").style.color="green";
+			 }
+			 changecolor()
+
+			 //cau5
+			 function changeBgColor(color){
+			 	document.body.style.backgroundColor = "grey";
+
+			  }
+			  changeBgColor()
+			  //cau6 
+			 function copyContent(paragraph1, paragraph2)
+			 {
+			 	p1.innerHTML=p2.innerHTML
+			 }
+			 copyContent()
+
+		</script>
+
+	</div>
+</script>
+</body>
+</html>
