@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> máy tính </title>
+	<link rel="stylesheet" type="text/css" href="minh.css">
+</head>
+<body>
+
+	<div class="wrap">
+		<h1> Calculator </h1>
+		<input type="text"  id="kq"/> <br/>
+			</br>
+		<button value="+" onclick="getvalue(this)"> + </button>
+		<button value="-" onclick="getvalue(this)"> - </button>
+		<button value="*" onclick="getvalue(this)"> * </button> 
+		<button value="/" onclick="getvalue(this)"> / </button>
+		<button value="AC" onclick="reset()"> AC </button> 	</br>
+		</br>
+		
+		<button value="6" onclick="getvalue(this)"> 6 </button>
+		<button value="7" onclick="getvalue(this)"> 7 </button>
+		<button value="8" onclick="getvalue(this)"> 8 </button>
+		<button value="9" onclick="getvalue(this)"> 9 </button> 
+		<button value="%" onclick="getvalue(this)"> % </button> </br>
+		
+		</br>
+	
+	
+		<button value="2" onclick="getvalue(this)"> 2 </button>
+		<button value="3" onclick="getvalue(this)"> 3 </button>
+		<button value="4" onclick="getvalue(this)"> 4 </button>
+		<button value="5" onclick="getvalue(this)"> 5 </button> 
+		<button value="√" onclick="sqrt()"> √ </button></br>
+	
+		</br>
+
+		<button value="0" onclick="getvalue(this)"> 0 </button>
+		<button value="1" onclick="getvalue(this)"> 1</button>
+		<button value="." onclick="getvalue(this)"> . </button>
+		<button value="=" onclick="result()"> = </button> 
+		<button value="!" onclick="giaithua()"> ! </button></br>
+		</br>
+
+		<button value="x2" onclick="binhphuong()"> X <sup> 2 </sup> </button></br>
+
+
+		
+	
+	</div>
+	<script>
+		function getvalue(ab){
+			var kq = ab.value;
+			var input = document.getElementById("kq");
+			input.value += kq;
+		}
+
+		function result(){
+			var temp = document.getElementById("kq").value;
+			var result = eval(temp);
+			document.getElementById("kq").value = result;
+		}
+
+		function reset(){
+			document.getElementById("kq").value = "";
+		}
+
+	
+		function sqrt(){
+				var a = document.getElementById("kq").value;
+				var sqrt = Math.sqrt(a);
+				document.getElementById("kq").value = sqrt;
+				
+				}
+		function giaithua(){
+			var gt=document.getElementById("kq").value;
+			var kq = 1;
+		
+			for (i = 1; i <=gt; i++){
+				kq *= i;
+			}
+
+			document.getElementById("kq").value = kq;
+			
+		
+		}	
+
+		function binhphuong(){
+			var bp=document.getElementById("kq").value;
+
+			var binhphuong=bp*bp;
+			document.getElementById("kq").value=binhphuong;
+
+
+
+		}
+
+
+
+		
+	</script>
+	
+</body>
+</html>
