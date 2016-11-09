@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> máy tính </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="wrap">
+		<h1> Calculator </h1>
+		<input type="text"  id="kq"/> <br/>
+			</br>
+		<button value="+" onclick="getvalue(this)"> + </button>
+		<button value="-" onclick="getvalue(this)"> - </button>
+		<button value="*" onclick="getvalue(this)"> * </button> 
+		<button value="/" onclick="getvalue(this)"> / </button>
+		<button value="AC" onclick="reset()"> AC </button> 	</br>
+		</br>
+		
+		<button value="6" onclick="getvalue(this)"> 6 </button>
+		<button value="7" onclick="getvalue(this)"> 7 </button>
+		<button value="8" onclick="getvalue(this)"> 8 </button>
+		<button value="9" onclick="getvalue(this)"> 9 </button> 
+		<button value="%" onclick="getvalue(this)"> % </button> </br>
+		
+		</br>
+	
+	
+		<button value="2" onclick="getvalue(this)"> 2 </button>
+		<button value="3" onclick="getvalue(this)"> 3 </button>
+		<button value="4" onclick="getvalue(this)"> 4 </button>
+		<button value="5" onclick="getvalue(this)"> 5 </button> 
+		<button value="√" onclick="sqrt()"> √ </button></br>
+	
+		</br>
+
+		<button value="0" onclick="getvalue(this)"> 0 </button>
+		<button value="1" onclick="getvalue(this)"> 1</button>
+		<button value="." onclick="getvalue(this)"> . </button>
+		<button value="=" onclick="result()"> = </button> 
+		<button value="!" onclick="giaithua()"> ! </button></br>
+		</br>
+
+		<button value="x2" onclick="binhphuong()"> X <sup> 2 </sup> </button> </br>
+		<button value="change" onclick="change()"> change</button>
+
+
+		
+	
+	</div>
+	<script>
+
+
+		function getvalue(ab){
+			var kq = ab.value;
+			var input = $("#kq");
+
+			input.val(input.val() + kq);
+		}
+
+		function result(){
+			var temp = $("#kq").val();
+			var result = eval(temp);
+			$("#kq").val(result);
+		}
+
+		function reset(){
+			$("#kq").val('');
+		}
+
+	
+		function sqrt(){
+				var a = $("#kq").val();
+				var sqrt = Math.sqrt(a);
+				$("#kq").val(sqrt);
+				
+				}
+		function giaithua(){
+			var gt=$("#kq").val();
+			var kq = 1;
+		
+			for (i = 1; i <=gt; i++){
+				kq *= i;
+			}
+
+			$("#kq").val(kq);
+			
+		
+		}	
+
+		function binhphuong(){
+			var bp= $("#kq").val();
+
+			var binhphuong=bp*bp;
+			$("#kq").val(binhphuong);
+
+
+
+		}
+		function change(){
+
+			$("body").css("background-color","pink");
+			$("h1").css("color","green")
+			$("button").css("background-color","yellow");
+			$("button").css("color","red")
+
+
+		}
+
+
+
+		</script>
+		<script src="jquery-3.1.1.min.js"></script>
+	
+</body>
+</html>
