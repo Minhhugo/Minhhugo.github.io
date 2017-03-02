@@ -23,13 +23,13 @@ nav {
 }
 
 .menu li:hover {
-    background-color: #ee4569;
+    background-color: #de696b;
     transition: 0.5s;
     color: white;
 }
 .navbar-default .navbar-nav>li>a:hover{
     color: white;
-    background-color: #ee4569
+    background-color: #de696b
 }
 #logo {
     height: 100%;
@@ -38,10 +38,10 @@ nav {
 }
 #slogan {
     font-size: 2.3vmax;
-    font-family: far;
+    font-family: sans-serif;
     color: white;
 }
-#logoAndSlogan {background-color: #ee4569;
+#logoAndSlogan {background-color: #de696b;
     margin-top: 4%;
 
 }
@@ -176,7 +176,7 @@ nav {
         padding-bottom: 0.7%;
     }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #ee4569;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #de696b;}
 
 #chat {left: 56%;}
 .carousel-inner > .item > img,
@@ -198,9 +198,11 @@ nav {
     max-width: 1210px;
     margin-right: auto;
     margin-left: auto;
+    background: white;
 }
+
 .vl{
-    background: url("../image/anh44.JPG") no-repeat;
+    background: url("../image/anh444.jpg") no-repeat;
 
 
 }
@@ -216,17 +218,19 @@ nav {
     background: rgba(255, 255, 255, 0.2);
 }
 
- .circle {
-    background: #ee4569;
-}
+
  .circle {
     text-align: center;
-    width: 232px;
-    height: 232px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
      background: rgba(255, 255, 255, 0.46);
     border-radius: 500px;
+     transition: 1S;
 }
+ .circle:hover{
+     background: #de696b;
+ }
 @media (min-width: 992px) {
     .carousel{
             height: 550px;
@@ -235,21 +239,21 @@ nav {
 }
 @media (min-width: 992px){
     h1{
-        font-size: 88px;
+        font-size: 70px;
     }
 }
 
 
 ul .active{
-    background-color: #ee4569;
+    background-color:#de696b;
     color: white;
 }
 
 article{
     display: inline-block;
-    padding-top: 12%;
-    padding-bottom: 12%;
-    padding-left: 3.8%;
+    padding-top: 9%;
+    padding-bottom: 14%;
+    padding-left: 6.9%;
 
 }
 i {
@@ -263,8 +267,97 @@ i {
 }
 .nav li a:hover {
 
-    background-color: #ee4569;
+    background-color: #de696b;
     color: white;
 
+}
+
+
+.circlee {
+    text-align: center;
+
+    height: 135px;
+    float: left;
+    padding-left: 6%;
+
+}
+
+.vll{
+    background: url("../image/anh666.jpg") no-repeat;
+
+
+}
+.anh{
+padding-top: 2%;
+
+}
+.anh1,.anh2,.anh3{
+    float: left;
+}
+.anh1,.anh2{
+    padding-right: 5%;
+
+
+}
+.anh1,.anh2,.anh3 :hover{
+
+    background: rgba(255, 255, 255, 0.46);
+
+}
+h1{
+
+
+    margin-bottom: 26px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    position: relative;
+    padding: 0 0 24px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 7%;
+}
+h4{
+    color: #de696b;
+    margin-top:0;padding-bottom:4% ;
+    font: 400 18px/26px 'Cookie', cursive;
+}
+
+.fa-3x {
+    font-size: 2em;
+    color: black;}
+
+footer{
+    background: #de696b;
+}
+ .footer-text {
+     padding-top: 3%;
+     padding-left: 3%;
+     padding-bottom: 7%;
+    font-size: 20px;
+     font-weight: bold;
+     color: white;
+     float: left;
+     width: 33.33%;
+ }
+@media (min-width: 992px) {
+    .it{
+        padding-bottom: 15%;
+        padding-left: 29%;
+    }
+}
+
+@media (min-width: 992px) {
+.group-chat
+{
+    margin-left: 3%;
+}
+    .owl-item{
+        float:left;
+        padding-right:3%;
+    }
 
 }
