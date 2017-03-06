@@ -13,6 +13,10 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!--&lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 
     <!--font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -27,15 +31,17 @@
     <!--script-->
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://use.fontawesome.com/f342b689b0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/f342b689b0.js"></script>
 
 
+    <script>
+        new WOW().init();
+    </script>
 
 
-
-
+</head>
 <body>
 <header>
     <nav id="menuNavbar" class="clg navbar navbar-fixed-top" style="background: rgba(255,255,255,0.46)">
@@ -57,12 +63,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav menu">
                     <li class="active"><a   style=" font-weight: bold ;color: white " href="index.html">Trang chủ</a> </li>
-                    <li><a href="about" style=" font-weight: bold" >Trang cá nhân</a></li>
-                    <li><a href="#" style=" font-weight: bold">Ảnh</a></li>
-                    <li><a href="#" style="font-weight: bold">Blog</a></li>
+                    <li><a href="trangcanhan.html" style=" font-weight: bold" >Trang cá nhân</a></li>
+                    <li><a href="anh.html" style=" font-weight: bold">Ảnh</a></li>
+                    <li><a href="blog.html" style="font-weight: bold">Blog</a></li>
                     <li><a href="#" style=" font-weight: bold">Liên hệ</a></li>
-
-
                 </ul>
 
                 <ul>
@@ -73,9 +77,10 @@
                         <button type="submit" class="btn btn-default" > Tìm kiếm </button>
                     </form>
                 </ul>
+                <ul>
 
 
-
+                </ul>
 
                 <ul id="loginButon" class="nav navbar-nav navbar-right vcl">
                     <li><a href="#" data-toggle="modal" data-target="#myModal"     ><span
@@ -167,7 +172,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid vc" >
+    <div class="container-fluid " style="padding-left: 0" >
         <div class="row">
             <div class="col">
 
@@ -311,8 +316,8 @@
 
 </div>
 
-    <div class="container-fluid" style="background: #eeeeee";>
-        <div class="container " >
+<div class="container-fluid" style="background: #eeeeee";>
+    <div class="container " >
         <div class="row-fluid">
 
 
@@ -325,9 +330,9 @@
                         <div id="myCarousell" class="carousel slide" data-ride="carousel" data-interval="false"  >
                             <!-- danh so -->
                             <!--<ol class="carousel-indicators">-->
-                                <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-                                <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
-                                <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                            <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                            <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
 
                             <!--</ol>-->
 
@@ -349,8 +354,8 @@
 
                                 <div class="item">
                                     <div style="float:left">
-                                    <img src="../image/anh5.jpg" alt="anh" style="width:560px;height: 364px; ">
-                                </div>
+                                        <img src="../image/anh5.jpg" alt="anh" style="width:560px;height: 364px; ">
+                                    </div>
                                     <div>
                                         <h3> How to met my love </h3>
                                         <a> by Minh  </a>
@@ -371,12 +376,12 @@
                                         <button style="background: #de696b;color: white">   <span>Read more</span> </button>
                                     </div>
                                 </div>
-                                </div>
-
                             </div>
 
-                            <!-- sang trai sang phai -->
-                            <div style="margin-top: -7%">
+                        </div>
+
+                        <!-- sang trai sang phai -->
+                        <div style="margin-top: -7%">
                             <a class="owl-prev" href="#myCarousell" role="button" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
@@ -385,238 +390,230 @@
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
 </div>
 
-    <div class="row-container "  style="    margin-bottom: 4%;" >
-        <div class="container-fluid">
+<div class="row-container "  style="    margin-bottom: 4%;" >
+    <div class="container-fluid">
 
-            <div class="row-fluid">
+        <div class="row-fluid">
 
 
-                <div class="title text-center">
-                    <h1>GALLERY</h1>
-                    <h4  > Love stories in photos</h4>
+            <div class="title text-center">
+                <h1>GALLERY</h1>
+                <h4  > Love stories in photos</h4>
+            </div>
+
+            <div class="anh">
+                <div class="anh1">
+                    <img src="../image/galary1.jpg" width="350" height="250">
                 </div>
 
-                <div class="anh">
-                    <div class="anh1">
-                        <img src="../image/anh22.jpg" width="350" height="250">
-                    </div>
 
+                <div class="anh2">
+                    <img src="../image/galary1.jpg" width="350" height="250">
+                </div>
 
-                    <div class="anh2">
-                        <img src="../image/galary1.jpg" width="350" height="250">
-                    </div>
-
-                    <div class="anh3">
-                        <img src="../image/galary5.jpg" width="350" height="250">
-
-                    </div>
-
+                <div class="anh3">
+                    <img src="../image/galary5.jpg" width="350" height="250">
 
                 </div>
 
 
             </div>
 
+
         </div>
+
     </div>
+</div>
 <div class="container-fluid" style="   background: #eeeeee;">
     <div class="row-container " style="   background: #eeeeee;">
 
 
-            <div class="row-fluid">
+        <div class="row-fluid">
 
 
-                <div class="title text-center">
-                    <h1 >BLOG</h1>
-                    <h4  > group && friend</h4>
+            <div class="title text-center">
+                <h1 > GROUP</h1>
+                <h4  > group && friend</h4>
+            </div>
+            <div class="group-chat">
+                <div class="owl-item ">
+                    <div class="item--member">
+
+                        <div class="thumbnail">
+                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                            <div class="heart-blog text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3>  love you </h3>
+                                <p>
+                                    love you
+                                </p>
+                                <p>
+                                    <a href="" class="text-pink">Vào group</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="group-chat">
-                    <div class="owl-item ">
-                        <div class="item--member">
+                <div class="owl-item " >
+                    <div class=" item--member">
 
-                            <div class="thumbnail">
-                                <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
-                                <div class="heart-blog text-center">
-                                </div>
-                                <div class="caption text-center">
-
-                                    <h3>  love you </h3>
-                                    <p>
-                                        love you
-                                    </p>
-                                    <p>
-                                        <a href="" class="text-pink">Vào group</a>
-                                    </p>
-                                </div>
+                        <div class="thumbnail">
+                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                            <div class="heart-blog text-center">
                             </div>
+                            <div class="caption text-center">
 
-                        </div>
-                    </div>
-                    <div class="owl-item " >
-                        <div class=" item--member">
-
-                            <div class="thumbnail">
-                                <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
-                                <div class="heart-blog text-center">
-                                </div>
-                                <div class="caption text-center">
-
-                                    <h3> love you</h3>
-                                    <p>
-                                        love you
-                                    </p>
-                                    <p>
-                                        <a href="" class="text-pink">Vào group</a>
-                                    </p>
-                                </div>
+                                <h3> love you</h3>
+                                <p>
+                                    love you
+                                </p>
+                                <p>
+                                    <a href="" class="text-pink">Vào group</a>
+                                </p>
                             </div>
-
                         </div>
+
                     </div>
-
-
-                    <div class="owl-item " >
-                        <div class="item--member">
-
-                            <div class="thumbnail">
-                                <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px ;height: 230px;">
-                                <div class="heart-blog text-center">
-                                </div>
-                                <div class="caption text-center">
-
-                                    <h3> love you</h3>
-                                    <p>
-                                        love you
-                                    <p>
-                                        <a href="" class="text-pink">Vào group</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="owl-item " >
-                        <div class=" item--member">
-
-                            <div class="thumbnail">
-                                <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
-                                <div class="heart-blog text-center">
-                                </div>
-                                <div class="caption text-center">
-
-                                    <h3> love you</h3>
-                                    <p>
-                                        love you
-                                    </p>
-                                    <p>
-                                        <a href="" class="text-pink">Vào group</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
                 </div>
 
+
+                <div class="owl-item " >
+                    <div class="item--member">
+
+                        <div class="thumbnail">
+                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px ;height: 230px;">
+                            <div class="heart-blog text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3> love you</h3>
+                                <p>
+                                    love you
+                                <p>
+                                    <a href="" class="text-pink">Vào group</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="owl-item " >
+                    <div class=" item--member">
+
+                        <div class="thumbnail">
+                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                            <div class="heart-blog text-center">
+                            </div>
+                            <div class="caption text-center">
+
+                                <h3> love you</h3>
+                                <p>
+                                    love you
+                                </p>
+                                <p>
+                                    <a href="" class="text-pink">Vào group</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
-        </div>
-    </div>
-
-    <div class="container dcm">
-        <div class="row">
-            <h1> FLLOW ME</h1>
-            <div class="it">
-
-
-                <div class="item-content">
-                    <div class="circlee cr1">
-                        <i class="fa fa-google-plus hasTooltip fa-3x"></i>
-                    </div>
-
-                </div>
-
-                <div class="item-content">
-                    <div class="circlee ">
-                        <i class="fa fa-twitter hasTooltip fa-3x "></i>
-
-                    </div>
-                </div>
-
-                <div class="item-content">
-                    <div class="circlee">
-                        <i class="fa fa-facebook hasTooltip fa-3x"></i>
-                    </div>
-
-                </div>
-
-                <div class="item-content">
-                    <div class="circlee ">
-                        <i class="fa fa-instagram fa-3x"></i>
-                    </div>
-                </div>
-
-                <div class="item-content">
-                    <div class="circlee ">
-                        <i class="fa fa-pinterest-square hasTooltip fa-3x "></i>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
     </div>
 </div>
-    <footer>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div  class="footer-text">
+
+<div class="container dcm">
+    <div class="row">
+        <h1> FLLOW ME</h1>
+        <div class="it">
 
 
-                        <p style="    padding-top: 15%;">  Love hearts <br> Copyright © 2017 | Privacy Policy </p>
+            <div class="item-content">
+                <div class="circlee cr1">
+                    <i class="fa fa-google-plus hasTooltip fa-3x"></i>
+                </div>
 
-                    </div>
-                    <div  class="footer-text">
-                        <i class="fa fa-location-arrow fa-3x " style="color: white;"> </i>
-                        Tân Hội,Đan Phượng, Hà Nội
+            </div>
 
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-twitter hasTooltip fa-3x "></i>
 
-                    </div>
-                    <div  class="footer-text">
+                </div>
+            </div>
 
-                        <i class="fa fa-envelope-o fa-3x " style="color: white;"></i>
-                        minh21296@gmail.com
+            <div class="item-content">
+                <div class="circlee">
+                    <i class="fa fa-facebook hasTooltip fa-3x"></i>
+                </div>
 
-                    </div>
-                    <div class="row">
+            </div>
 
-                    </div>
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-instagram fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-pinterest-square hasTooltip fa-3x "></i>
                 </div>
             </div>
         </div>
-    </footer>
+
+    </div>
+
+</div>
+</div>
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div  class="footer-text">
+
+
+                    <p style="    padding-top: 15%;">  Love hearts <br> Copyright © 2017 | Privacy Policy </p>
+
+                </div>
+                <div  class="footer-text">
+                    <i class="fa fa-location-arrow fa-3x " style="color: white;"> </i>
+                    Tân Hội,Đan Phượng, Hà Nội
+
+
+                </div>
+                <div  class="footer-text">
+
+                    <i class="fa fa-envelope-o fa-3x " style="color: white;"></i>
+                    minh21296@gmail.com
+
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
@@ -634,7 +631,7 @@
 
 
 
-    <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
 
-    </body>
+</body>
 </html>

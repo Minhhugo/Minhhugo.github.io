@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>trang ca nhan </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="../css/canhan.css">
+    <!--script-->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/f342b689b0.js"></script>
+
+
+<body>
+<header>
+    <nav id="menuNavbar" class="clg navbar navbar-fixed-top" style="background: rgba(255,255,255,0.46)">
+        <div class="container-fluid vl">
+            <div id="logoHeader" class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="logoAndSlogan" class="navbar-brand">
+
+                    <a href="#" id="slogan">
+                        Sống để yêu thương
+                    </a>
+                </div>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav menu">
+                    <li><a style=" font-weight: bold" href="index.html">Trang chủ</a></li>
+                    <li><a href="trangcanhan.html" style=" font-weight: bold">Trang cá nhân</a></li>
+                    <li><a href="anh.html" style=" font-weight: bold">Ảnh</a></li>
+                    <li><a href="blog.html" style="font-weight: bold">Blog</a></li>
+                    <li><a href="#" style=" font-weight: bold">Liên hệ</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default"> Tìm kiếm</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-log-in  "></span> Login
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-content">
+                        <div id="modalMenu1" class="panel panel-login">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <a href="#" style="color:#1CB94A;" id="login-form-link">Đăng nhập</a>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <a href="#" style="color: #1CB94A" id="register-form-link">Đăng kí</a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="panel-bodys">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <form id="login-form" action="http://phpoll.com/login/process" method="post"
+                                              role="form"
+                                              style="display: block;">
+                                            <div class="form-group">
+                                                <input type="text" name="username" id="username1" tabindex="1"
+                                                       class="form-control"
+                                                       placeholder="Tài khoản" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" name="password" id="password1" tabindex="2"
+                                                       class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <input type="checkbox" tabindex="3" class="" name="remember"
+                                                       id="remember">
+                                                <label for="remember"> Ghi nhớ </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-sm-offset-3">
+                                                        <input type="submit" name="login-submit" id="login-submit"
+                                                               tabindex="4"
+                                                               class="form-control btn btn-login" value="Đăng nhập">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="text-center">
+                                                            <a href="http://phpoll.com/recover" tabindex="5"
+                                                               class="forgot-password"
+                                                               style="color: cornflowerblue">Quên mật khẩu?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form id="register-form" action="http://phpoll.com/register/process"
+                                              method="post"
+                                              role="form" style="display: none;">
+                                            <div class="form-group">
+                                                <input type="text" name="username" id="username" tabindex="1"
+                                                       class="form-control"
+                                                       placeholder="Tài khoản" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="email" id="email" tabindex="1"
+                                                       class="form-control"
+                                                       placeholder="Địa chỉ Email" value="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" name="password" id="password" tabindex="2"
+                                                       class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" name="confirm-password" id="confirm-password"
+                                                       tabindex="2"
+                                                       class="form-control" placeholder="Nhập lại mật khẩu">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-sm-offset-3">
+                                                        <input type="submit" name="register-submit" id="register-submit"
+                                                               tabindex="4" class="form-control btn btn-register"
+                                                               value="Đăng kí ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+<div class="container-fluid vc">
+    <img src="../image/anh122.jpg ">
+
+</div>
+<div class="container-fluid " style="margin-bottom: 3% ;background: #eeeeee">
+    <div class="row-container  "  >
+
+        <div class="container">
+            <div class="row-fluid">
+
+
+                <div class="title text-center">
+                 <h1>PROFILE</h1>
+                    <h4  > profile of you</h4>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+
+                    <img src="../image/anhbia.jpg " STYLE="width: 100%;">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Hồ sơ</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Bộ sưu tập</a></li>
+                            <li><a data-toggle="tab" href="#menu3">Cộng đồng</a></li>
+                            <li><a data-toggle="tab" href="#menu4">Mọi người</a></li>
+                        </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+
+
+                           <div>
+                               <input type="text" class="form-control"  placeholder="Bạn đang nghĩ gì ?" style="    height: 80px; font-size: 21px;">
+                               <button type="submit" class="form-control cc1" > Đăng</button>
+                           </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;  padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+
+                                    </div>
+                                    <div class="cap"> Hôm nay nắng đẹp quá  </div>
+                                        <div class="danganh" >
+                                            <img src="../image/anh5.jpg" style="width: 100%">
+
+                                        </div>
+                                    <input type="text" class="form-control"  placeholder="ồ đẹp thật đấy " style=" height:45px; ">
+
+
+                                </div>
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;   padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+
+                                    </div>
+                                    <div class="cap1"> Nhớ bạn ấy .huhu </div>
+
+                                    <input type="text" class="form-control"  placeholder="tôi cũng nhớ ông  " style=" height:45px; ">
+
+
+                                </div>
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anhc.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh  </a>
+
+                                    </div>
+                                    <div class="cap"> Nhớ em   </div>
+                                    <div class="danganh" >
+                                        <img src="../image/anhc.jpg" style="width: 100%">
+
+                                    </div>
+                                    <input type="text" class="form-control"  placeholder="tội cho cô gái đó :))" style=" height:45px; ">
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;   padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh</a>
+
+                                    </div>
+                                    <div class="cap1"> Buồn quá, ai đi ăn ốc đi :))  </div>
+
+                                    <input type="text" class="form-control"  placeholder="ồ đẹp thật đấy " style=" height:45px; ">
+
+
+                                </div>
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+
+                                    </div>
+                                    <div class="cap"> Hôm nay nắng đẹp quá  </div>
+                                    <div class="danganh" >
+                                        <img src="../image/galary5.jpg" style="width: 100%">
+
+                                    </div>
+                                    <input type="text" class="form-control"  placeholder="ồ đẹp thật đấy " style=" height:45px; ">
+
+
+                                </div>
+
+                                <div class="baidang" style="margin-bottom: 3%">
+
+                                    <div class="clearfix">
+                                        <img src="../image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                        <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+
+                                    </div>
+                                    <div class="cap"> nắng mưa là chuyện nắng mưa ai biết yêu thương đã vừa </div>
+                                    <div class="danganh" >
+                                        <img src="../image/galary3.jpg" style="width: 100%">
+
+                                    </div>
+                                    <input type="text" class="form-control"  placeholder="lại tương tư em nào rồi" style=" height:45px; ">
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <h3>Hồ sơ</h3>
+
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                                    <h3>Bộ sưu tập</h3>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#anhtuban">Ảnh từ bạn</a></li>
+                                        <li><a data-toggle="tab" href="#anhcuaban">ảnh của bạn</a></li>
+                                        <li><a data-toggle="tab" href="#album">Album</a></li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="anhtuban" class="tab-pane fade in active">
+                                               <div class="moon clearfix">
+                                                   <div class="moon1">
+                                                       <img src="../image/galary5.jpg" width="295px" height="250">
+                                                   </div>
+                                                   <div class="moon1">
+                                                       <img src="../image/galary5.jpg" width="295px" height="250">
+                                                   </div>
+                                                   <div class="moon1">
+                                                       <img src="../image/galary5.jpg" width="295px" height="250">
+                                                   </div>
+                                               </div>
+                                            <div class="moon clearfix">
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                            </div>
+                                            <div class="moon clearfix">
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary5.jpg" width="295px" height="250">
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div id="anhcuaban" class="tab-pane fade">
+                                            <div class="moon clearfix">
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                            </div>
+                                            <div class="moon clearfix">
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                            </div>
+                                            <div class="moon clearfix">
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                                <div class="moon1">
+                                                    <img src="../image/galary1.jpg" width="295px" height="250">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div id="album" class="tab-pane fade">
+                                            <div class="moon clearfix">
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                        </div>
+                                        <div class="moon clearfix">
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                        </div>
+                                        <div class="moon clearfix">
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                            <div class="moon1">
+                                                <img src="../image/galary1.jpg" width="295px" height="250">
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                        </div>
+
+                        <div id="menu3" class="tab-pane fade">
+                                <h3>Cộng đồng</h3>
+                            <div class="group-chat">
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item " >
+                                    <div class=" item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="owl-item " >
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px ;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="owl-item " >
+                                    <div class=" item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="menu4" class="tab-pane fade">
+                            <h3>Mọi người</h3>
+                            <div class="group-chat">
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3>  love you </h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item " >
+                                    <div class=" item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="owl-item " >
+                                    <div class="item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px ;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="owl-item " >
+                                    <div class=" item--member">
+
+                                        <div class="thumbnail">
+                                            <img src="../image/ty1.jpg" alt="" class="img-responsive"  style="width: 240px;height: 230px;">
+                                            <div class="heart-blog text-center">
+                                            </div>
+                                            <div class="caption text-center">
+
+                                                <h3> love you</h3>
+                                                <p>
+                                                    love you
+                                                </p>
+                                                <p>
+                                                    <a href="" class="text-pink">Vào group</a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+                        <div class="title-chat-user">
+                            <h3 class="text-pink">User Online</h3>
+                        </div>
+                        <ul class="all-member-chat">
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị A</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Thị B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị C</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Văn A</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Văn B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Văn C</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị A</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Thị B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị C</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Văn A</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Văn B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Văn C</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Ngọc A</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Ngọc B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị A</li>
+                            <li><i class="fa fa-user"></i>Nguyễn Thị B</li>
+                            <li class="user-online"><i class="fa fa-user"></i>Nguyễn Thị C</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+    </div>
+
+</div>
+
+
+<div class="container dcm" >
+    <div class="row">
+        <h1> FLLOW ME</h1>
+        <div class="it">
+
+
+            <div class="item-content">
+                <div class="circlee cr1">
+                    <i class="fa fa-google-plus hasTooltip fa-3x"></i>
+                </div>
+
+            </div>
+
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-twitter hasTooltip fa-3x "></i>
+
+                </div>
+            </div>
+
+            <div class="item-content">
+                <div class="circlee">
+                    <i class="fa fa-facebook hasTooltip fa-3x"></i>
+                </div>
+
+            </div>
+
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-instagram fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="item-content">
+                <div class="circlee ">
+                    <i class="fa fa-pinterest-square hasTooltip fa-3x "></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="footer-text">
+
+
+                    <p style="    padding-top: 4%;"> Love hearts <br> Copyright © 2017 | Privacy Policy </p>
+
+                </div>
+                <div class="footer-text">
+                    <i class="fa fa-location-arrow fa-3x " style="color: white;"> </i>
+                    Tân Hội,Đan Phượng, Hà Nội
+
+
+                </div>
+                <div class="footer-text">
+
+                    <i class="fa fa-envelope-o fa-3x " style="color: white;"></i>
+                    minh21296@gmail.com
+
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

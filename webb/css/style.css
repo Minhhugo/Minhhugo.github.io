@@ -351,14 +351,16 @@ footer{
 }
 
 @media (min-width: 992px) {
-.group-chat
-{
-    margin-left: 3%;
-}
-    .owl-item{
-        float:left;
-        padding-right:3%;
+    .group-chat {
+        margin-left: 3%;
+    }
+
+    .owl-item {
+        float: left;
+        padding-right: 3%;
     }
 
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                       </head>
+.clg{
+    box-shadow: 2px 1px 1px gainsboro;
+}
