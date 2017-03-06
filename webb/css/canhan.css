@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+footer{
+    background: #de696b;
+}
+.footer-text {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 7%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    float: left;
+    width: 33.33%;
+}
+.vl{
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+
+}
+.menu{
+    float: right;
+}
+#logoAndSlogan {
+    background-color: #de696b;
+
+}
+#slogan {
+    font-size: 2.3vmax;
+    font-family: sans-serif;
+    color: white;
+}
+.navbar-brand a {
+    list-style: none;
+    text-decoration: none;
+    color: #0041ff;
+}
+.circlee {
+    text-align: center;
+
+    height: 135px;
+    float: left;
+    padding-left: 6%;
+
+}
+.fa-3x {
+    font-size: 2em;
+    color: black;}
+h1{
+
+
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    position: relative;
+    padding: 0 0 24px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+h4{
+    color: #de696b;
+    margin-top:0;padding-bottom:4% ;
+    font: 400 18px/26px 'Cookie', cursive;
+}
+.circlee {
+    text-align: center;
+
+    height: 135px;
+    float: left;
+    padding-left: 6%;
+
+}
+@media (min-width: 992px) {
+    .it{
+        padding-bottom: 15%;
+        padding-left: 29%;
+    }
+}
+.vc {
+    padding-left: 0;
+}
+.clg{
+    box-shadow: 2px 1px 1px gainsboro;
+}
+.anh1,.anh2,.anh3{
+    float: left;
+}
+.anh1,.anh2{
+    padding-right: 3%;
+
+
+}
+.anh{
+    margin-top: 3%;
+}
+.blog1 {
+    margin-bottom: 3%;
+}
+.cc1{
+    width: 82px;
+    margin-left: 89%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: cornflowerblue;
+    color: white;
+}
+.cap1 {
+    font-size: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.cap{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.all-member-chat .user-online i {
+    color: #00aaf0;
+
+}
+
+.all-member-chat li {
+    padding: 10px;}
+@media (min-width: 992px){
+    .owl-item {
+        float: left;
+        padding-right: 3%;
+    }}
+
+.moon1 {
+    float: left;
+    padding-left: 1%;
+}
+.moon{
+    margin-top: 2%;
+}
