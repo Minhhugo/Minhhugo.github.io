@@ -7,7 +7,6 @@
     font-family: sans-serif;
 
 }
-
 .vl{
     margin-right: 0;
     margin-left: 0;
@@ -33,19 +32,7 @@
     text-decoration: none;
     color: #0041ff;
 }
-#chat {left: 56%;}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
-}
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
- }
-.clgt{
-    margin-bottom: 0px;
-}
 .caro{
     height: 100%;
 }
@@ -92,6 +79,13 @@
         font-size: 70px;
     }
 }
+
+
+ul .active{
+    background-color:#de696b;
+    color: white;
+}
+
 article{
     display: inline-block;
     padding-top: 9%;
@@ -116,8 +110,9 @@ i {
     padding-left: 6%;
 
 }
+
 .vll{
-    background: url("../image/anh666.jpg") no-repeat;
+    background: url("../image/anh444.jpg") no-repeat;
 }
 .anh{
 padding-top: 2%;
