@@ -11,14 +11,10 @@ footer{
     background: #de696b;
 }
 .footer-text {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 7%;
     font-size: 20px;
     font-weight: bold;
     color: white;
     float: left;
-    width: 33.33%;
 }
 .vl{
     margin-right: 0;

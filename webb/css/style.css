@@ -112,7 +112,8 @@ i {
 }
 
 .vll{
-    background: url("../image/anh444.jpg") no-repeat;
+
+    background: url("../image/anh444.jpg " ) no-repeat ;
 }
 .anh{
 padding-top: 2%;
@@ -120,12 +121,9 @@ padding-top: 2%;
 }
 .anh1,.anh2,.anh3{
     float: left;
+    margin-left: 3%;
 }
-.anh1,.anh2{
-    padding-right: 5%;
 
-
-}
 .anh1,.anh2,.anh3 :hover{
 
     background: rgba(255, 255, 255, 0.46);
@@ -161,14 +159,10 @@ footer{
     background: #de696b;
 }
  .footer-text {
-     padding-top: 3%;
-     padding-left: 3%;
-     padding-bottom: 7%;
     font-size: 20px;
      font-weight: bold;
      color: white;
      float: left;
-     width: 33.33%;
  }
 @media (min-width: 992px) {
     .it{
