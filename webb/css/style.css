@@ -75,13 +75,22 @@
     }
 
 }
-@media (min-width: 992px){
+/*@media (max-width: 568px){*/
 
-}
+    /*.circle {*/
+        /*text-align: center;*/
+        /*width: 160px;*/
+        /*height: 160px;*/
+        /*margin: 0 auto;*/
+        /*background: rgba(255, 255, 255, 0.46);*/
+        /*border-radius: 500px;*/
+        /*transition: 1S;*/
+    /*}*/
+/*}*/
 .vll{
+    background: url("../image/anh444.jpg " ) ;}
 
-    background: url("../image/anh444.jpg " ) no-repeat ;
-}
+
 
 ul .active{
     background-color:#de696b;
