@@ -16,3 +16,8 @@ jQuery(document).ready(function($) {
     )
 })
 
+$(document).ready(function(){
+    $("#login-ccc").click(function(){
+        $(".login-iteam").toggle();
+    });
+});

@@ -194,56 +194,40 @@ footer{
     box-shadow: 2px 1px 1px gainsboro;
 }
 
-
-
-@import "bourbon";
-
-body {
-    background: #eee !important;
-}
-
-.wrapper {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.form-signin {
-    max-width: 380px;
-    padding: 15px 35px 45px;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.1);
-
-.form-signin-heading,
-.checkbox {
-    margin-bottom: 30px;
-}
-
-.checkbox {
-    font-weight: normal;
-}
-
-.form-control {
+#login-ccc {
     position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-@include box-sizing(border-box);
-
-&:focus {
-     z-index: 2;
- }
+    display: block;
 }
 
-input[type="text"] {
-    margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.login-iteam {
+    display: none;
+    position: absolute;
+    top: 103px;
+    right: 1%;
+    padding: 15px;
+    background: #de696b;
+    max-width: 293px;
+    color: white;
+    z-index: 10;}
+.facevcl{
+    background: #29487d;
+    color: white;
 }
-
-input[type="password"] {
-    margin-bottom: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.facevcl:hover{
+    background: #29487d;
+    color: white;
 }
+.ggvcl1{
+    background: #db4437;
+    color: white;
+}
+.ggvcl1:hover{ background: #db4437;
+    color: white;}
+.lgvcl{
+    background: olivedrab;
+    color: white;
+}
+.lgvcl:hover{
+    background: olivedrab;
+    color: white;
 }
