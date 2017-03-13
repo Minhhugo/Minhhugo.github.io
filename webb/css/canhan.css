@@ -94,11 +94,22 @@ h4{
 }
 .anh1,.anh2,.anh3{
     float: left;
+
+
 }
 .anh1,.anh2{
-    padding-right: 3%;
+    padding-right: 2%;
 
 
+}
+.anh1>img{
+    border: solid 7px pink;
+}
+.anh2>img{
+    border: solid 7px pink;
+}
+.anh3>img{
+    border: solid 7px pink;
 }
 .anh{
     margin-top: 3%;
@@ -179,4 +190,74 @@ h4{
 .lgvcl:hover{
     background: olivedrab;
     color: white;
+}
+.collapse.in{
+    display: table;
+    float: right;background: white
+}
+
+/* rol chuot
+
+ */
+.slideanim{
+    visibility:hidden;
+}
+.slide{
+    animation-name:slide;
+    -webkit-animation-name:slide;
+    animation-duration:2s;
+    -webkit-animation-duration:2s;
+    visibility: visible;
+}
+@keyframes slide{
+    0% {
+        opacity:0;
+        transform: translateY(70%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide{
+    0% {
+        opacity:0;
+        -webkit-transform: translateY(70%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.anh1:hover img {
+    transform: translate(0,-10px);
+    box-shadow: 0 5px 5px 0 pink;
+
+}
+.anh2:hover img {
+    transform: translate(0,-10px);
+    box-shadow: 0 5px 5px 0 pink;
+
+}
+.anh3:hover img {
+    transform: translate(0,-10px);
+    box-shadow: 0 5px 5px 0 pink;
+
+}
+.anh1 img{
+    transition: all 0.5s ease;
+}
+.anh2 img{
+    transition: all 0.5s ease;
+}
+.anh3 img{
+    transition: all 0.5s ease;
+}
+
+
+
+@media (max-width:320px) {
+    .cc1{
+        margin-left: 0;
+    }
 }

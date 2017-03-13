@@ -21,3 +21,15 @@ $(document).ready(function(){
         $(".login-iteam").toggle();
     });
 });
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if(pos < winTop +400)
+            {
+                $(this).addClass("slide");
+            }
+        });
+    });
+})
