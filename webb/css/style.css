@@ -75,18 +75,7 @@
     }
 
 }
-/*@media (max-width: 568px){*/
 
-    /*.circle {*/
-        /*text-align: center;*/
-        /*width: 160px;*/
-        /*height: 160px;*/
-        /*margin: 0 auto;*/
-        /*background: rgba(255, 255, 255, 0.46);*/
-        /*border-radius: 500px;*/
-        /*transition: 1S;*/
-    /*}*/
-/*}*/
 .vll{
     background: url("../image/anh444.jpg " )
 }
@@ -236,36 +225,7 @@ footer{
     display: table;
     float: right;background: white
 }
-.slideanim{
-    visibility:hidden;
-}
-.slide{
-    animation-name:slide;
-    -webkit-animation-name:slide;
-    animation-duration:2s;
-    -webkit-animation-duration:2s;
-    visibility: visible;
-}
-@keyframes slide{
-    0% {
-        opacity:0;
-        transform: translateY(70%);
-    }
-    100%{
-        opacity:1;
-        transform: translateY(0%);
-    }
-}
-@-webkit-keyframes slide{
-    0% {
-        opacity:0;
-        -webkit-transform: translateY(70%);
-    }
-    100%{
-        opacity:1;
-        -webkit-transform: translateY(0%);
-    }
-}
+
 .anh1:hover img {
     transform: translate(0,-10px);
     box-shadow: 0 5px 5px 0 pink;
@@ -300,3 +260,39 @@ footer{
 .anh3>img{
     border: solid 7px pink;
 }
+
+/* rol chuot
+
+ */
+.slideanim{
+    visibility:hidden;
+}
+.slide1{
+    animation-name:slide1;
+    -webkit-animation-name:slide1;
+    animation-duration:1s;
+    -webkit-animation-duration:1s;
+    visibility: visible;
+}
+@keyframes slide1{
+    0% {
+        opacity:0;
+        transform: translateY(70%);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide1{
+    0% {
+        opacity:0;
+        -webkit-transform: translateY(70%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+

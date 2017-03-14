@@ -1,5 +1,4 @@
 
-
 jQuery(document).ready(function($) {
     //selector đến menu cần làm việc
     var TopFixMenu = $("#menuNavbar");
@@ -28,7 +27,7 @@ $(document).ready(function(){
             var winTop = $(window).scrollTop();
             if(pos < winTop +400)
             {
-                $(this).addClass("slide");
+                $(this).addClass("slide1");
             }
         });
     });

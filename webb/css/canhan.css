@@ -88,6 +88,7 @@ h4{
 }
 .vc {
     padding-left: 0;
+    padding-right: 0;
 }
 .clg{
     box-shadow: 2px 1px 1px gainsboro;
@@ -202,14 +203,14 @@ h4{
 .slideanim{
     visibility:hidden;
 }
-.slide{
-    animation-name:slide;
-    -webkit-animation-name:slide;
-    animation-duration:2s;
-    -webkit-animation-duration:2s;
+.slide1{
+    animation-name:slide1;
+    -webkit-animation-name:slide1;
+    animation-duration:1s;
+    -webkit-animation-duration:1s;
     visibility: visible;
 }
-@keyframes slide{
+@keyframes slide1{
     0% {
         opacity:0;
         transform: translateY(70%);
@@ -219,7 +220,7 @@ h4{
         transform: translateY(0%);
     }
 }
-@-webkit-keyframes slide{
+@-webkit-keyframes slide1{
     0% {
         opacity:0;
         -webkit-transform: translateY(70%);
@@ -229,6 +230,12 @@ h4{
         -webkit-transform: translateY(0%);
     }
 }
+
+
+
+
+
+
 .anh1:hover img {
     transform: translate(0,-10px);
     box-shadow: 0 5px 5px 0 pink;

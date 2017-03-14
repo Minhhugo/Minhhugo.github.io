@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 
     <link rel="stylesheet" href="css/canhan.css">
     <!--script-->
@@ -69,7 +69,7 @@
                     </li>
                     <li>
                         <a class="btn button-pink pull-right login" id="login-ccc">
-                            <span class="glyphicon glyphicon-log-in  "></span> Đăng kí
+                            <span class="glyphicon glyphicon-log-in  "></span> Đăng nhập
                         </a>
                     </li>
 
@@ -111,38 +111,38 @@
     </div>
     <div class="row-container  "  style="    margin-bottom: 4%;box-shadow: 2px 1px 1px gainsboro;" >
         <div class="title text-center">
-            <h1>Liên hệ</h1>
+            <h1  style="font-family: 'Lobster Two', cursive;">Liên hệ</h1>
             <h4  > liện hệ với chúng tôi</h4>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="googleMap" style="height:400px;width:100%;"></div>
-            </div>
-        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-12">-->
+                <!--<div id="googleMap" style="height:400px;width:100%;"></div>-->
+            <!--</div>-->
+        <!--</div>-->
 
 
-    <!-- Add Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-        var myCenter = new google.maps.LatLng(21.09219987, 105.70654325);
-        function initialize() {
-            var mapProp = {
-                center:myCenter,
-                zoom:12,
-                scrollwheel:false,
-                draggable:false,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    <!--&lt;!&ndash; Add Google Maps &ndash;&gt;-->
+        <!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
+        <!--<script>-->
+        <!--var myCenter = new google.maps.LatLng(21.09219987, 105.70654325);-->
+        <!--function initialize() {-->
+            <!--var mapProp = {-->
+                <!--center:myCenter,-->
+                <!--zoom:12,-->
+                <!--scrollwheel:false,-->
+                <!--draggable:false,-->
+                <!--mapTypeId:google.maps.MapTypeId.ROADMAP-->
+            <!--};-->
+            <!--var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);-->
 
-            var marker = new google.maps.Marker({
-                position:myCenter,
-            });
-            marker.setMap(map);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <div class="container slideanim">
+            <!--var marker = new google.maps.Marker({-->
+                <!--position:myCenter,-->
+            <!--});-->
+            <!--marker.setMap(map);-->
+        <!--}-->
+        <!--google.maps.event.addDomListener(window, 'load', initialize);-->
+    <!--</script>-->
+    <div class="container">
         <div class="row-fluid">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div style="font-size: 30px;text-align: center;font-weight: bold;padding-bottom: 4% "> Thông tin liên hệ</div>
