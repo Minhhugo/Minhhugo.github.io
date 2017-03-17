@@ -82,7 +82,7 @@ h4{
 }
 @media (min-width: 992px) {
     .it{
-        padding-bottom: 15%;
+
         padding-left: 29%;
     }
 }
@@ -166,7 +166,8 @@ h4{
     top: 103px;
     right: 1%;
     padding: 15px;
-    background: #de696b;
+
+    background: #eeeeee;
     max-width: 293px;
     color: white;
     z-index: 10;}
@@ -267,4 +268,11 @@ h4{
     .cc1{
         margin-left: 0;
     }
+}
+.all-member-chat li {
+    list-style-type: none;
+    border: solid 1px black;
+}
+ i .fa-user{
+    padding-left: 2px;
 }

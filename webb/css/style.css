@@ -75,6 +75,12 @@
     }
 
 }
+@media (min-width: 992px) {
+    .vc12{
+        height: 400px;
+    }
+
+}
 
 .vll{
     background: url("../image/anh444.jpg " )
@@ -164,7 +170,7 @@ footer{
  }
 @media (min-width: 992px) {
     .it{
-        padding-bottom: 15%;
+
         padding-left: 29%;
     }
 }
@@ -179,6 +185,14 @@ footer{
         padding-right: 3%;
     }
 
+}
+@media (max-width: 320px) {
+    .header-content{
+width: 81%;
+    }
+    .cdgv{
+        padding-right: 26%;
+    }
 }
 .clg{
     box-shadow: 2px 1px 1px gainsboro;
@@ -195,7 +209,8 @@ footer{
     top: 103px;
     right: 1%;
     padding: 15px;
-    background: #de696b;
+    background: #eeeeee;
+    color: pink;
     max-width: 293px;
     color: white;
     z-index: 10;}
@@ -296,3 +311,10 @@ footer{
 }
 
 
+.form-inline label {
+    padding-right: 1%;
+padding-left: 1%;
+}
+.form-inline{
+    padding-left: 5%;
+}

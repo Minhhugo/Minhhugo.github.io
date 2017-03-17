@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Sống để yêu thương </title>
+
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--script-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/f342b689b0.js"></script>
+
+
+</head>
+<body>
+<header>
+    <nav id="menuNavbar" class="clg navbar navbar-fixed-top " style="background: rgba(255,255,255,0.46)">
+        <div class="container-fluid vl ">
+            <div id="logoHeader" class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background: #de696b;">
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="logoAndSlogan" class="navbar-brand">
+
+                    <a href="#" id="slogan">
+                        Sống để yêu thương
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav menu">
+                    <li><a style=" font-weight: bold;background: #de696b;color: white" href="index.html">Trang chủ</a></li>
+                    <li><a href="trangcanhan.html" style=" font-weight: bold;    font-size: 15px; color: black;">Trang cá nhân</a></li>
+                    <li><a href="anh.html" style=" font-weight: bold; font-size: 15px;color: black;">Ảnh</a></li>
+                    <li><a href="blog.html" style="font-weight: bold;  font-size: 15px;color: black;">Blog</a></li>
+                    <li><a href="lienhe.html" style=" font-weight: bold ;font-size: 15px; color: black;">Liên hệ</a></li>
+                    <li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default"> Tìm kiếm</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a class="btn button-pink pull-right login" id="login-ccc" style="color: black">
+                            <span class="glyphicon glyphicon-log-in  "></span> Đăng nhập
+                        </a>
+                    </li>
+
+                </ul>
+                <div id="login-form" class="clearfix">
+                    <div class="login-iteam">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" style="color: #0f0f0f">Tài khoản</label>
+                                <input type="text" placeholder="nhập tài khoản" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass" style="color: #0f0f0f">Mật khẩu</label>
+                                <input type="password" placeholder="nhập mật khẩu" class="form-control" id="pass" name="pass">
+                            </div>
+                            <div class="row">
+
+                            </div>
+                            <button class="btn btn-default lgvcl"><i class="fa fa-lock left"></i> Đăng nhập
+                            </button>
+                            <a data-toggle="modal" href="#login-modal">Tạo tài khản</a>
+
+                            <button class="btn btn-default facevcl"><i class="fa fa-facebook "></i>
+                                Facebook login
+                            </button>
+                            <button class="btn btn-default ggvcl1"><i class="fa fa-google "></i>
+                                Google login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid " style="padding-left: 0" >
+        <div class="row">
+            <div class="col">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel"  >
+                    <!-- danh so -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                    </ol>
+
+                    <!--anh -->
+                    <div class="carousel-inner caro" role="listbox">
+                        <div class="item active">
+                            <img src="image/anh12.jpg" alt="anh" >
+                        </div>
+
+                        <div class="item">
+                            <img src="image/anh33.jpg" alt="anh">
+                        </div>
+
+                        <div class="item">
+                            <img src="image/anh466.jpg" alt="anh"  >
+                        </div>
+
+                    </div>
+
+                    <!-- sang trai sang phai -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ccc" style="padding-top: 1%; padding-bottom: 1%;background: pink" >
+        <div class="header-content container" >
+            <form class="form-inline " action="" >
+                <label> Xin chào , tên tôi là</label>
+
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="tên của bạn">
+
+                <label class="cdgv"> Tôi là  </label>
+
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" style="height: 30px;">
+                    <option selected style="height: 30px;">Giới tính</option>
+                    <option value="1">Nam</option>
+                    <option value="2">Nữ</option>
+                </select>
+
+
+                <label> Tìm giới tính  </label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0"  style="height: 30px;">
+                    <option selected style="height: 30px;">Giới tính</option>
+                    <option value="1">Nam</option>
+                    <option value="2">Nữ</option>
+
+                </select>
+
+
+
+                <label> Từ  </label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" style="height: 30px;">
+                    <option selected>tuổi.</option>
+                    <option value="1">18</option>
+                    <option value="2">19</option>
+                    <option value="1">20</option>
+                    <option value="2">21</option>
+                    <option value="1">22</option>
+                    <option value="2">23</option>
+                    <option value="1">24</option>
+                    <option value="2">25</option>
+                    <option value="1">26</option>
+                    <option value="2">27</option>
+                    <option value="1">28</option>
+                    <option value="2">29</option>
+                    <option value="2">30</option>
+                </select>
+
+
+                <label> Đến </label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" style="height: 30px;">
+                    <option selected>tuổi.</option>
+                    <option value="1">18</option>
+                    <option value="2">19</option>
+                    <option value="1">20</option>
+                    <option value="2">21</option>
+                    <option value="1">22</option>
+                    <option value="2">23</option>
+                    <option value="1">24</option>
+                    <option value="2">25</option>
+                    <option value="1">26</option>
+                    <option value="2">27</option>
+                    <option value="1">28</option>
+                    <option value="2">29</option>\
+                    <option value="2">30</option>
+                </select>
+
+
+
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</header>
+<div class="container" style="padding-top: 4%">
+
+    <div class="group-chat">
+        <div>
+            <div class="owl-item " style="padding-left: 4%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty7.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3>  Hường Tây </h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="owl-item " style="padding-left: 2%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty8.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3>  Gia Huy Đinh</h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="owl-item " style="padding-left: 2%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty9.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3> Lê Khánh Hiếu </h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="owl-item " style="padding-left: 4%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty10.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3>  Ngọc Ngọc </h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="owl-item " style="padding-left: 2%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty11.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3>  Thạo gay </h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="owl-item " style="padding-left: 2%">
+                <div class="item--member">
+
+                    <div class="thumbnail">
+                        <img src="image/ty12.jpg" alt="" class="img-responsive" style="width: 240px;height: 230px;">
+                        <div class="heart-blog text-center">
+                        </div>
+                        <div class="caption text-center">
+
+                            <h3>  Đụn </h3>
+                            <p>
+                                21 tuổi
+                            </p>
+                            <p>
+                                <button href="" class="text-pink">Theo dõi</button>
+                                <button href="" class="text-pink">Nhắn tin</button>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container dcm slideanim">
+    <div class="row">
+        <div class="col-md-12">
+            <h1  style="font-family: 'Lobster Two', cursive;">FLLOW ME</h1>
+            <div class="it">
+
+
+                <div class="item-content">
+                    <div class="circlee cr1">
+                        <i class="fa fa-google-plus hasTooltip fa-3x"></i>
+                    </div>
+
+                </div>
+
+                <div class="item-content">
+                    <div class="circlee ">
+                        <i class="fa fa-twitter hasTooltip fa-3x "></i>
+
+                    </div>
+                </div>
+
+                <div class="item-content">
+                    <div class="circlee">
+                        <i class="fa fa-facebook hasTooltip fa-3x"></i>
+                    </div>
+
+                </div>
+
+                <div class="item-content">
+                    <div class="circlee ">
+                        <i class="fa fa-instagram fa-3x"></i>
+                    </div>
+                </div>
+
+                <div class="item-content">
+                    <div class="circlee ">
+                        <i class="fa fa-pinterest-square hasTooltip fa-3x "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style=" padding-top: 5%; padding-bottom: 4%;">
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div  class="footer-text">
+                    <i class="fa  fa-heart-o fa-3x " style="color: white;"> </i>
+                    Love hearts <br> Copyright © 2017 | Privacy Policy
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div  class="footer-text">
+                    <i class="fa fa-location-arrow fa-3x " style="color: white;"> </i>
+                    Tân Hội,Đan Phượng, Hà Nội
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div  class="footer-text">
+                    <i class="fa fa-envelope-o fa-3x " style="color: white;"></i>
+                    minh21296@gmail.com
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
