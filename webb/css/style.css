@@ -87,12 +87,6 @@
 }
 
 
-
-ul .active{
-    background-color:#de696b;
-    color: white;
-}
-
 article{
     display: inline-block;
     padding-top: 9%;
@@ -134,9 +128,6 @@ padding-top: 2%;
 
 }
 h1{
-
-
-    margin-bottom: 26px;
     letter-spacing: 3px;
     line-height: 30px;
     font-size: 30px;
@@ -290,7 +281,7 @@ width: 81%;
     visibility: visible;
 }
 @keyframes slide1{
-    0% {
+    0% {////////////
         opacity:0;
         transform: translateY(70%);
     }
@@ -317,4 +308,19 @@ padding-left: 1%;
 }
 .form-inline{
     padding-left: 5%;
+}
+
+.menu>li>a:hover {
+    background: #de696b ;
+    color: white;
+}
+.menu >li> a{
+    color: black;
+    font-weight: 700 !important;
+    font: 16px / 23px 'Open Sans', sans-serif;
+
+}
+.menu .active {
+    color: white;
+    background: #de696b;
 }
