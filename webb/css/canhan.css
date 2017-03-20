@@ -324,3 +324,12 @@ h4{
     border: solid 2px pink;
     margin-bottom: 4%;
 }
+.ds{
+    font-size: 20px;
+    margin: 2%;
+    padding: 2%;
+    border: solid 1px green;
+    background: green;
+    color: white;
+    border-radius: 38px 139px 0 106px;
+}
