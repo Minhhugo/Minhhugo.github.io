@@ -20,6 +20,7 @@ $(document).ready(function(){
         $(".login-iteam").toggle();
     });
 });
+
 $(document).ready(function(){
     $(window).scroll(function(){
         $(".slideanim").each(function(){

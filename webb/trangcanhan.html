@@ -68,14 +68,15 @@
                         </form>
                     </li>
                     <li>
-                        <a class="btn button-pink pull-right login" id="login-ccc" style="color:black">
+                        <a class="btn button-pink pull-right login" id="login-ccc" style="color:black" >
                             <span class="glyphicon glyphicon-log-in  "></span> Đăng nhập
                         </a>
+
                     </li>
 
                 </ul>
                 <div id="login-form" class="clearfix">
-                    <div class="login-iteam">
+                    <div class="login-iteam" >
                         <form>
                             <div class="form-group">
                                 <label for="email" style="color: #0f0f0f">Tài khoản</label>
@@ -90,7 +91,8 @@
                             </div>
                             <button class="btn btn-default lgvcl"><i class="fa fa-lock left"></i> Đăng nhập
                             </button>
-                            <a data-toggle="modal" href="#login-modal">Tạo tài khản</a>
+                            <!--<a data-toggle="modal" href="#">Tạo tài khản</a>-->
+                            <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
 
                             <button class="btn btn-default facevcl"><i class="fa fa-facebook "></i>
                                 Facebook login
@@ -105,6 +107,23 @@
         </div>
     </nav>
 </header>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Đăng kí tài khoản</h1><br>
+            <form>
+                <input type="text" style="color: black" name="user" placeholder="Tài khoản">
+                <input type="password"style="color: black" name="pass" placeholder="Mật khẩu">
+                <input type="submit" name="login" class="login loginmodal-submit" value="Đăng kí">
+            </form>
+
+            <div class="login-help">
+                <a href="#">Quên mật khẩu</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-fluid vc">
     <img src="image/anh122.jpg  "  class="img-responsive">
 </div>
@@ -871,7 +890,10 @@
                         </div>
                         <div id="menu5" class="tab-pane fade">
                             <div class="row">
-                                <div class="col-md-12">
+
+                                <div class="clearfix">
+
+                                <div class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
                                     <div class="clearfix">
                                         <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
                                         <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
@@ -881,49 +903,87 @@
                                     </div>
 
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="clearfix">
-                                        <img src="image/ty11.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
-                                        <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Thạo gay </a>
-                                    </div>
-                                    <div class="ds">
-                                        8/3 đắp chăn đi ngủ thôi
-                                    </div>
 
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="clearfix">
+                                <div  style=" padding-top: 10%" class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                    <div class="clearfix" style="padding-left: 4%">
                                         <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
                                         <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
                                     </div>
                                     <div class="ds">
-                                        Bạn gái không có, 2 thằng hẹn hò đi :))
+                                       tao không. hỏi làm gì ?
                                     </div>
-
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="clearfix">
-                                        <img src="image/ty11.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
-                                        <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Thạo gay</a>
-                                    </div>
-                                    <div class="ds">
-                                        M điên à, tao gay tao có ny nha
-                                    </div>
 
                                 </div>
 
-                            </div>
-                            <div class="col-md-12">
                                 <div class="clearfix">
-                                    <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
-                                    <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+
+                                    <div class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                        <div class="clearfix">
+                                            <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                            <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+                                        </div>
+                                        <div class="ds">
+                                            mai mày đi đâu ko
+                                        </div>
+
+                                    </div>
+
+                                    <div  style=" padding-top: 10%" class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                        <div class="clearfix" style="padding-left: 4%">
+                                            <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                            <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+                                        </div>
+                                        <div class="ds">
+                                            tao không. hỏi làm gì ?
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div style="margin: 3%">
-                                    <input style="width: 200px;  height: 60px;padding-left: 3%" type="text" placeholder="gửi gì đó cho bạn">
+                                <div class="clearfix">
+
+                                    <div class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                        <div class="clearfix">
+                                            <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                            <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+                                        </div>
+                                        <div class="ds">
+                                            mai mày đi đâu ko
+                                        </div>
+
+                                    </div>
+
+                                    <div  style=" padding-top: 10%" class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                        <div class="clearfix" style="padding-left: 4%">
+                                            <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                            <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+                                        </div>
+                                        <div class="ds">
+                                            tao không. hỏi làm gì ?
+                                        </div>
+                                    </div>
+
                                 </div>
 
+                                <div class="clearfix">
+
+                                    <div class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+                                        <div class="clearfix">
+                                            <img src="image/anh5.jpg" style="width: 40px; height: 40px;border-radius: 50% ;float: left">
+                                            <a style="float: left;padding-top: 2%; padding-left: 3%;font-size: 17px;}"> Nguyễn Văn Minh </a>
+                                        </div>
+                                        <div class="ds">
+                                            <input style="width: 200px;padding-left: 3%;color: black" type="text" placeholder="gửi gì đó cho bạn">
+                                        </div>
+
+                                    </div>
+
+                                    <div  style=" padding-top: 10%" class="col-md-12 col-sm-12 col-lg-6 col-xs-6">
+
+                                    </div>
+
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
