@@ -56,7 +56,7 @@
 }
 
 
- .circle {
+.circle {
     text-align: center;
     width: 200px;
     height: 200px;
@@ -65,9 +65,9 @@
     border-radius: 500px;
      transition: 1S;
 }
- .circle:hover{
+.circle:hover{
      background: #de696b;
- }
+}
 
 @media (min-width: 992px) {
     .carousel{
@@ -121,7 +121,6 @@ padding-top: 2%;
     float: left;
     margin-left: 3%;
 }
-
 .anh1,.anh2,.anh3 :hover{
 
     background: rgba(255, 255, 255, 0.46);
@@ -137,7 +136,6 @@ h1{
     padding: 0 0 24px 0;
     text-align: center;
     text-transform: uppercase;
-
     margin-top: 7%;
 }
 h4{
@@ -145,20 +143,18 @@ h4{
     margin-top:0;padding-bottom:4% ;
     font: 400 18px/26px 'Cookie', cursive;
 }
-
 .fa-3x {
     font-size: 2em;
     color: black;}
-
 footer{
     background: #de696b;
 }
- .footer-text {
+.footer-text {
     font-size: 20px;
      font-weight: bold;
      color: white;
      float: left;
- }
+}
 @media (min-width: 992px) {
     .it{
 
@@ -185,145 +181,175 @@ width: 81%;
         padding-right: 26%;
     }
 }
-.clg{
-    box-shadow: 2px 1px 1px gainsboro;
-}
+@media (max-width: 320px) {
 
-#login-ccc {
-    position: relative;
-    display: block;
-}
+    .itemm {
+        padding-left: 6%;
 
-.login-iteam {
-    display: none;
-    position: absolute;
-    top: 103px;
-    right: 1%;
-    padding: 15px;
-    background: #eeeeee;
-    color: pink;
-    max-width: 293px;
-    color: white;
-    z-index: 10;}
-.facevcl{
-    background: #29487d;
-    color: white;
-}
-.facevcl:hover{
-    background: #29487d;
-    color: white;
-}
-.ggvcl1{
-    background: #db4437;
-    color: white;
-}
-.ggvcl1:hover{ background: #db4437;
-    color: white;}
-.lgvcl{
-    background: olivedrab;
-    color: white;
-}
-.lgvcl:hover{
-    background: olivedrab;
-    color: white;
-}
-.collapse.in{
-    display: table;
-    float: right;background: white
-}
+    }}
 
-.anh1:hover img {
-    transform: translate(0,-10px);
-    box-shadow: 0 5px 5px 0 pink;
-
-}
-.anh2:hover img {
-    transform: translate(0,-10px);
-    box-shadow: 0 5px 5px 0 pink;
-
-}
-.anh3:hover img {
-    transform: translate(0,-10px);
-    box-shadow: 0 5px 5px 0 pink;
-
-}
-.anh1 img{
-    transition: all 0.5s ease;
-}
-.anh2 img{
-    transition: all 0.5s ease;
-}
-.anh3 img{
-    transition: all 0.5s ease;
-}
-
-.anh1>img{
-    border: solid 7px pink;
-}
-.anh2>img{
-    border: solid 7px pink;
-}
-.anh3>img{
-    border: solid 7px pink;
-}
-
-/* rol chuot
-
- */
-.slideanim{
-    visibility:hidden;
-}
-.slide1{
-    animation-name:slide1;
-    -webkit-animation-name:slide1;
-    animation-duration:1s;
-    -webkit-animation-duration:1s;
-    visibility: visible;
-}
-@keyframes slide1{
-    0% {////////////
-        opacity:0;
-        transform: translateY(70%);
+    .clg {
+        box-shadow: 2px 1px 1px gainsboro;
     }
-    100%{
-        opacity:1;
-        transform: translateY(0%);
+
+    #login-ccc {
+        position: relative;
+        display: block;
     }
-}
-@-webkit-keyframes slide1{
-    0% {
-        opacity:0;
-        -webkit-transform: translateY(70%);
+
+    .login-iteam {
+        display: none;
+        position: absolute;
+        top: 103px;
+        right: 1%;
+        padding: 15px;
+        background: #eeeeee;
+        color: pink;
+        max-width: 293px;
+        color: white;
+        z-index: 10;
     }
-    100%{
-        opacity:1;
-        -webkit-transform: translateY(0%);
+
+    .facevcl {
+        background: #29487d;
+        color: white;
     }
-}
+
+    .facevcl:hover {
+        background: #29487d;
+        color: white;
+    }
+
+    .ggvcl1 {
+        background: #db4437;
+        color: white;
+    }
+
+    .ggvcl1:hover {
+        background: #db4437;
+        color: white;
+    }
+
+    .lgvcl {
+        background: olivedrab;
+        color: white;
+    }
+
+    .lgvcl:hover {
+        background: olivedrab;
+        color: white;
+    }
+
+    .collapse.in {
+        display: table;
+        float: right;
+        background: white
+    }
+
+    .anh1:hover img {
+        transform: translate(0, -10px);
+        box-shadow: 0 5px 5px 0 pink;
+
+    }
+
+    .anh2:hover img {
+        transform: translate(0, -10px);
+        box-shadow: 0 5px 5px 0 pink;
+
+    }
+
+    .anh3:hover img {
+        transform: translate(0, -10px);
+        box-shadow: 0 5px 5px 0 pink;
+
+    }
+
+    .anh1 img {
+        transition: all 0.5s ease;
+    }
+
+    .anh2 img {
+        transition: all 0.5s ease;
+    }
+
+    .anh3 img {
+        transition: all 0.5s ease;
+    }
+
+    .anh1 > img {
+        border: solid 7px pink;
+    }
+
+    .anh2 > img {
+        border: solid 7px pink;
+    }
+
+    .anh3 > img {
+        border: solid 7px pink;
+    }
+
+    /* rol chuot
+
+     */
+    .slideanim {
+        visibility: hidden;
+    }
+
+    .slide1 {
+        animation-name: slide1;
+        -webkit-animation-name: slide1;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+
+    @keyframes slide1 {
+        0% {
+        / / / / / / / / / / / / opacity: 0;
+            transform: translateY(70%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    @-webkit-keyframes slide1 {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+        }
+    }
 
 
-.form-inline label {
-    padding-right: 1%;
-padding-left: 1%;
-}
-.form-inline{
-    padding-left: 5%;
-}
+    .form-inline label {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
 
-.menu>li>a:hover {
-    background: #de696b ;
-    color: white;
-}
-.menu >li> a{
-    color: black;
-    font-weight: 700 !important;
-    font: 16px / 23px 'Open Sans', sans-serif;
+    .form-inline {
+        padding-left: 5%;
+    }
 
-}
-.menu .active {
-    color: white;
-    background: #de696b;
-}
+    .menu > li > a:hover {
+        background: #de696b;
+        color: white;
+    }
+
+    .menu > li > a {
+        color: black;
+        font-weight: 700 !important;
+        font: 16px / 23px 'Open Sans', sans-serif;
+
+    }
+
+    .menu .active {
+        color: white;
+        background: #de696b;
+    }
 /****** LOGIN MODAL ******/
 .loginmodal-container {
     padding: 30px;
@@ -412,6 +438,6 @@ padding-left: 1%;
 .login-help{
     font-size: 12px;
 }
-.modal-backdrop.in {
+.modal-backdrop.in{
     z-index: 1;
 }
